@@ -1,0 +1,34 @@
+/* RESET I PODSTAWY */
+body { background-color: #f4f7f6; color: #444; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; }
+
+/* KAFELKI */
+.msg { 
+    border-radius: 12px; padding: 1.5em; margin-bottom: 1.5em; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: 1px solid #eee !important; text-align: center; 
+}
+.msg:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.1) !important; border-color: #1cb841 !important; }
+
+/* PRZYCISKI 3D - ABSOLUTNY BRAK PODKREŚLEŃ */
+.button-success, .button-secondary, .button-error { 
+    display: inline-flex; align-items: center; justify-content: center; 
+    text-decoration: none !important; font-weight: bold; border-radius: 8px; 
+    transition: all 0.1s ease; position: relative; top: 0; cursor: pointer; 
+    border: none; color: white !important; text-transform: uppercase; letter-spacing: 1px; 
+}
+
+/* Kolory przycisków */
+.button-success { background: #1cb841; box-shadow: 0 5px 0 #158a31; }
+.button-success:hover { background: #1ed34a; top: -2px; box-shadow: 0 7px 0 #158a31; }
+.button-success:active { top: 4px; box-shadow: 0 1px 0 #158a31; }
+
+.button-secondary { background: #42b8dd; box-shadow: 0 5px 0 #3189a5; }
+.button-error { background: #ca3c3c; box-shadow: 0 5px 0 #962828; }
+
+.button-large { padding: 1em 2em; font-size: 1.1em; }
+.button-small { padding: 0.6em 1.2em; font-size: 0.85em; }
+
+/* KOMUNIKATY */
+.error { background-color: #f8d7da; color: #721c24; border-left: 5px solid #dc3545 !important; }
+.info { background-color: #d4edda; color: #155724; border-left: 5px solid #28a745 !important; }
